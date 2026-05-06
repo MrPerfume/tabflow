@@ -1,0 +1,8 @@
+{
+  "extensionName": {
+    "message": "TabFlow"
+  },
+  "extensionDescription": {
+    "message": "A local-first tab manager for saving, closing, and restoring browser sessions."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tabflow",
+  "version": "0.1.0",
+  "description": "TabFlow - 本地优先的 Chrome 标签页管理器",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@wxt-dev/module-vue": "^1.0.2",
+    "wxt": "0.19.25",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.280",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.10"
+  },
+  "packageManager": "pnpm@10.10.0"
+}

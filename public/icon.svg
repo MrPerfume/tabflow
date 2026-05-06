@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TabFlow">
+  <rect width="128" height="128" rx="28" fill="#0f172a"/>
+  <path d="M30 37c0-6.1 4.9-11 11-11h46c6.1 0 11 4.9 11 11v8H30v-8Z" fill="#34d399"/>
+  <path d="M30 52h68v39c0 6.1-4.9 11-11 11H41c-6.1 0-11-4.9-11-11V52Z" fill="#ecfdf5"/>
+  <path d="M45 67h38M45 81h27" stroke="#059669" stroke-width="8" stroke-linecap="round"/>
+</svg>
