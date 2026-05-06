@@ -223,7 +223,7 @@ onMounted(refresh);
   <main class="app">
     <aside class="sidebar">
       <header class="brand">
-        <div class="logo">TF</div>
+        <img class="logo" src="/icon.svg" alt="" />
         <div>
           <h1>TabFlow</h1>
           <p>本地优先标签管理</p>
@@ -451,11 +451,9 @@ onMounted(refresh);
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  background: var(--primary);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 900;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 10px 24px #04785726;
 }
 
 h1,

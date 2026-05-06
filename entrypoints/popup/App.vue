@@ -57,9 +57,12 @@ onMounted(refresh);
 <template>
   <main class="popup">
     <header class="header">
-      <div>
-        <strong>TabFlow</strong>
-        <p>保存、关闭、稍后恢复</p>
+      <div class="brand">
+        <img class="mini-logo" src="/icon.svg" alt="" />
+        <div>
+          <strong>TabFlow</strong>
+          <p>保存、关闭、稍后恢复</p>
+        </div>
       </div>
       <button class="btn ghost" @click="openDashboard">控制台</button>
     </header>
@@ -110,7 +113,23 @@ onMounted(refresh);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   margin-bottom: 16px;
+}
+
+.brand {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 8px 18px #04785724;
 }
 
 .header strong {
