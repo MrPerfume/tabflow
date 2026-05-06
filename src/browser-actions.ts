@@ -80,7 +80,7 @@ export async function saveTabsFromBrowser(source: SaveSource, options: { tabIds?
   const group: SavedGroup = {
     id: groupId,
     title: options.groupTitle || title || `会话 - ${formatDateTime(now)}`,
-    type: source === 'bookmarks' ? 'bookmark' : source === 'snapshot' ? 'snapshot' : 'session',
+    type: source === 'bookmarks' ? 'bookmark' : source === 'snapshot' ? 'snapshot' : source === 'current-group' ? 'tabGroup' : 'session',
     color,
     createdAt: now,
     updatedAt: now,

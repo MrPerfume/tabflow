@@ -1,6 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TabFlow">
-  <rect width="128" height="128" rx="28" fill="#0f172a"/>
-  <path d="M30 37c0-6.1 4.9-11 11-11h46c6.1 0 11 4.9 11 11v8H30v-8Z" fill="#34d399"/>
-  <path d="M30 52h68v39c0 6.1-4.9 11-11 11H41c-6.1 0-11-4.9-11-11V52Z" fill="#ecfdf5"/>
-  <path d="M45 67h38M45 81h27" stroke="#059669" stroke-width="8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="tab" x1="38" y1="30" x2="91" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d1fae5"/>
+    </linearGradient>
+    <filter id="shadow" x="16" y="18" width="96" height="90" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#064e3b" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M34 31c0-5 4-9 9-9h38c5 0 9 4 9 9v7H34v-7Z" fill="#bbf7d0" opacity=".74"/>
+    <path d="M26 43c0-5 4-9 9-9h54c5 0 9 4 9 9v7H26v-7Z" fill="#ecfdf5" opacity=".9"/>
+    <path d="M20 57c0-5 4-9 9-9h70c5 0 9 4 9 9v34c0 5-4 9-9 9H29c-5 0-9-4-9-9V57Z" fill="url(#tab)"/>
+  </g>
+  <path d="M42 67h24c11 0 17 11 9 19l-3 3" fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m73 75 5 14-15-3" fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 84h18" stroke="#065f46" stroke-width="8" stroke-linecap="round" opacity=".86"/>
 </svg>

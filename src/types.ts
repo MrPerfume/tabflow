@@ -1,4 +1,4 @@
-export type GroupType = 'session' | 'snapshot' | 'bookmark' | 'board';
+export type GroupType = 'session' | 'tabGroup' | 'snapshot' | 'bookmark' | 'board';
 
 export interface SavedGroup {
   id: string;

@@ -58,6 +58,7 @@ const selectedTabGroups = computed(() => {
 const typeCounts = computed(() => ({
   all: groups.value.length,
   session: groups.value.filter((group) => group.type === 'session').length,
+  tabGroup: groups.value.filter((group) => group.type === 'tabGroup').length,
   snapshot: groups.value.filter((group) => group.type === 'snapshot').length,
   bookmark: groups.value.filter((group) => group.type === 'bookmark').length,
   board: groups.value.filter((group) => group.type === 'board').length,
@@ -182,7 +183,7 @@ async function updateSettings(patch: Partial<Settings>) {
 }
 
 function typeLabel(type: GroupType) {
-  return { session: '会话', snapshot: '快照', bookmark: '书签', board: '看板' }[type];
+  return { session: '会话', tabGroup: '标签组', snapshot: '快照', bookmark: '书签', board: '看板' }[type];
 }
 
 function relativeTime(timestamp?: number) {
@@ -239,6 +240,7 @@ onMounted(refresh);
       <nav class="filters">
         <button :class="{ active: activeType === 'all' }" @click="activeType = 'all'">全部 <span>{{ typeCounts.all }}</span></button>
         <button :class="{ active: activeType === 'session' }" @click="activeType = 'session'">会话 <span>{{ typeCounts.session }}</span></button>
+        <button :class="{ active: activeType === 'tabGroup' }" @click="activeType = 'tabGroup'">标签组 <span>{{ typeCounts.tabGroup }}</span></button>
         <button :class="{ active: activeType === 'snapshot' }" @click="activeType = 'snapshot'">快照 <span>{{ typeCounts.snapshot }}</span></button>
         <button :class="{ active: activeType === 'bookmark' }" @click="activeType = 'bookmark'">书签 <span>{{ typeCounts.bookmark }}</span></button>
       </nav>
